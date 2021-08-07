@@ -16,7 +16,6 @@ from docx import Document
 
 
 
-
 # The Speech recognizer function that takes real time speech as Input
 def SpeechRecognizerRealTime():
 
@@ -48,8 +47,6 @@ def SpeechRecognizerRealTime():
 
 
 
-
-
 # The Speech recognizer function that takes real time speech as Input
 def SpeechRecognizerSourceReader(source):
 
@@ -76,8 +73,6 @@ def SpeechRecognizerSourceReader(source):
 
 
 
-
-
 # The Document File Generator Function
 def WriteDocFile(destination, data):
 
@@ -89,12 +84,9 @@ def WriteDocFile(destination, data):
 
 
 
+# Function to run Driver Code
 
-
-
-# Driver Code
-
-if __name__ == "__main__":
+def driverFunc():
 
 
     # Speech to Text Recognition part
@@ -166,6 +158,14 @@ if __name__ == "__main__":
         fName = input()
         fName = fName + '.docx'
         WriteDocFile(fName,FinalText)
+
+
+
+
+# Driver code
+if __name__ == "__main__":
+
+    driverFunc()
 
 
 
